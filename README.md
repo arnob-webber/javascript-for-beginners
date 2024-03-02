@@ -133,6 +133,13 @@ Other Style Guides
     
     console.log(person.name); // Outputs: "arnob"
 
+    -ARRAY
+    /*An array is an ordered collection of values (elements) stored in a single variable.
+    it's created using square brackets []*/
+    
+    const fruits = ["apple", "banana", "orange"];
+    
+    console.log(fruits[1]); // Outputs: "banana"
     ```
 
 **[⬆ back to top](#table-of-contents)**
