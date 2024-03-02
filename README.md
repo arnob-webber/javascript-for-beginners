@@ -158,18 +158,28 @@ Other Style Guides
 ## References
 
   <a name="references--prefer-const"></a><a name="2.1"></a>
-  - [2.1](#references--prefer-const) Use `const` for all of your references; avoid using `var`. eslint: [`prefer-const`](https://eslint.org/docs/rules/prefer-const), [`no-const-assign`](https://eslint.org/docs/rules/no-const-assign)
+  - [2.1](#references--prefer-const) the concept of using const and avoiding var
 
-    > Why? This ensures that you can’t reassign your references, which can lead to bugs and difficult to comprehend code.
+    > var (Not Recommended)
+    > const (Recommended)
+    
+> [!NOTE]
+> 1. using const ensure that your references remain constant, reducing the risk of bugs and
+> 2. It also makes your code more self-explanatory because readers know that the value won’t change.
 
     ```javascript
+    
     // bad
     var a = 1;
     var b = 2;
-
+    
+    /*var is used to declare a and b. This allows the variables to be reassigned later in the code, which can lead to bugs and difficult-to-comprehend code.*/
+    
     // good
     const a = 1;
     const b = 2;
+    /* const is used to declare a and b. This ensures that the variables cannot be reassigned later in the code, which helps prevent bugs and makes the code easier to understand. */
+    
     ```
 
   <a name="references--disallow-var"></a><a name="2.2"></a>
