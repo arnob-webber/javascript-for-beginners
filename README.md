@@ -131,7 +131,7 @@ Other Style Guides
     occupation: 'web developer'
     };
     
-console.log(person.name); // Outputs: "arnob"
+    console.log(person.name); // Outputs: "arnob"
 
     ```
 
