@@ -140,6 +140,17 @@ Other Style Guides
     const fruits = ["apple", "banana", "orange"];
     
     console.log(fruits[1]); // Outputs: "banana"
+
+    -FUNCTION
+      /*function is a reusable block of code that performs a specific task.
+       it can take input (parameters) and return an output (result).*/
+    
+    function math(a, b) {
+    return a + b;
+    }
+    const sum = math(2, 1); // Calls the function with arguments 2 and 1
+    console.log(sum); // Outputs: 3
+    
     ```
 
 **[⬆ back to top](#table-of-contents)**
