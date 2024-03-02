@@ -167,20 +167,21 @@ Other Style Guides
 > 1. using const ensure that your references remain constant, reducing the risk of bugs and
 > 2. It also makes your code more self-explanatory because readers know that the value won’t change.
 
-    ```javascript
-    
+  ```javascript
     // bad
     var a = 1;
     var b = 2;
     
-    /*var is used to declare a and b. This allows the variables to be reassigned later in the code, which can lead to bugs and difficult-to-comprehend code.*/
+    /*var is used to declare a and b. This allows the variables to be reassigned later in the code,
+    which can lead to bugs and difficult-to-comprehend code.*/
     
     // good
     const a = 1;
     const b = 2;
-    /* const is used to declare a and b. This ensures that the variables cannot be reassigned later in the code, which helps prevent bugs and makes the code easier to understand. */
     
-    ```
+    /* const is used to declare a and b. This ensures that the variables cannot be reassigned later in the code,
+    which helps prevent bugs and makes the code easier to understand. */
+  ```
 
   <a name="references--disallow-var"></a><a name="2.2"></a>
   - [2.2](#references--disallow-var) If you must reassign references, use `let` instead of `var`. eslint: [`no-var`](https://eslint.org/docs/rules/no-var)
