@@ -121,12 +121,18 @@ Other Style Guides
     <br />
 
     ```javascript
-    const foo = [1, 2];
-    const bar = foo;
+    -OBJECT:
+    /* object is a composite data type that can hold multiple key-value pairs &
+    it's created using curly braces {} and contains properties (keys) and their associated values.*/
+    
+    const person = {
+    name: "arnob",
+    age: 22,
+    occupation: 'web developer'
+    };
+    
+console.log(person.name); // Outputs: "arnob"
 
-    bar[0] = 9;
-
-    console.log(foo[0], bar[0]); // => 9, 9
     ```
 
 **[⬆ back to top](#table-of-contents)**
