@@ -75,17 +75,41 @@ Other Style Guides
 
     <br />
 
-    ```javascript
-    const foo = 1;
-    let bar = foo;
+    ``` Js
+    -STRING
+    
+    let jsString = 'arnob';
+    let jsString = "22" 
+    //string represents a sequence of characters enclosed in single (') or double (") quotes.
 
-    bar = 9;
+    -NUMBER
+    let jsNumber = 22;
+    let jsNumber = 22.8;
+    /*number represents numeric values. It can be an integer or a floating-point (decimal) number. but we dont use  any quotes 
+     to  declare a number in js */
 
-    console.log(foo, bar); // => 1, 9
+    -NULL
+    let jsNull = null
+    //represents the absence of any value, if a variable doesn’t have a value yet, it can be assigned
+
+    -BOOLEAN
+    let jsBoolean = true;
+    let jsBoolean = false
+    // it's a logical value that can be either true or false.
+
+    -UNDEFINDED
+    let jsUndefined;
+    // it's a variable that has been declared but has't yet assigned any value
+
+    -SYMBOL
+    let jsSymbol = Symbol("mySymbol")
+    // symbols r unique and immutable values often used as property keys in objects
+
+    -BiGINT
+    const jsBigint = 1234567890123456789012345n;
+    //it's a special numeric type that can represent integers larger than the maximum safe integer in JavaScript.
+    
     ```
-
-    - Symbols and BigInts cannot be faithfully polyfilled, so they should not be used when targeting browsers/environments that don’t support them natively.
-
   <a name="types--complex"></a><a name="1.2"></a>
   - [1.2](#types--complex)  **Complex**: When you access a complex type you work on a reference to its value.
 
