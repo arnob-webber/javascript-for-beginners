@@ -186,19 +186,29 @@ Other Style Guides
   <a name="references--disallow-var"></a><a name="2.2"></a>
   - [2.2](#references--disallow-var) If you must reassign references, use `let` instead of `var`. eslint: [`no-var`](https://eslint.org/docs/rules/no-var)
 
-    > Why? `let` is block-scoped rather than function-scoped like `var`.
+    > Let’s break down the difference between `var` and `let` in JavaScript.
+    > 1. `var` is function-scoped, which means it is accessible throughout the entire function where it is declared.
+    > 2. it has a hoisting behavior, where variable declarations are moved to the top of their containing function or block.
+    > 3. if u declare a variable using var inside a block (like an if statement), it will still be accessible outside that block.
 
     ```javascript
-    // bad
-    var count = 1;
+     function exampleVar() {
     if (true) {
-      count += 1;
+    var x = 10;
     }
+    console.log(x); // Outputs 10
+    }
+    ```
+    > 1) `let` is block-scoped, which means it is only accessible within the block where it is defined.
+    > 2) It doesn't have hoisting behavior like #var.
+    > 3) If u declare a variable using let inside a block, it won’t be accessible outside that block.
 
-    // good, use the let.
-    let count = 1;
+     ```javascript
+    function exampleLet() {
     if (true) {
-      count += 1;
+    let y = 20;
+    }
+    // console.log(y); // error: y is not defined
     }
     ```
 
